@@ -37,7 +37,7 @@ public class main_control {
         return "login_page";
     }
     @GetMapping("/MainHome")
-    public String MainHome(Model model) {
+    public String MainHome() {
         return "Main_home";
     }
     // 회원 가입 페이지 요청 처리
@@ -51,5 +51,9 @@ public class main_control {
         System.out.println(memberDTO);
         memberService.idsave(memberDTO);
         return "login_page"; // 홈 페이지로 리다이렉트
+    }
+    @GetMapping("/logout")
+    public String logout() {
+        return "Logout";
     }
 }

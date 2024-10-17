@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookcafe</title>
-    <link type="text/css" rel="stylesheet" href="/css/main_home.css">
+    <link type="text/css" rel="stylesheet" href="/css/Main_home.css">
 </head>
 <body>
 <header>
@@ -12,12 +12,11 @@
         <h1>Bookcafe</h1>
         <nav>
             <ul>
-                <li><a href="#">홈</a></li>
+                <li><a href="/MainHome" >홈</a></li>
                 <li><a href="#">새 책</a></li>
                 <li><a href="#">채팅</a></li>
-                <li><a href="#">회원가입</a></li>
+                <li><a href="/logout">로그아웃</a></li>
                 <li><a href="#">내 소식</a></li>
-                <li><a href="#">session 값 확인: <p th:text="${session.loginName}"></p></a> </li>
             </ul>
         </nav>
     </div>
@@ -27,7 +26,15 @@
 
 <main>
     <section class="youtube-video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/jcSVUpa5RxY" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560"
+                height="315"
+                src="https://www.youtube.com/embed/jcSVUpa5RxY?autoplay=1"
+                frameborder="0"
+                allow="autoplay;
+                encrypted-media"
+                loop="0"
+                allowfullscreen>
+        </iframe>
     </section>
 
     <section class="popular-posts">

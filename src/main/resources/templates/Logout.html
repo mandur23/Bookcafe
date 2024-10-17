@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #000000;
+        }
+        button {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <title>Logout</title>
+</head>
+<body>
+    <div>
+        <h1 style="align-content: baseline">정말로 로그아웃을 하시 겠습니까?</h1>
+        <nav>
+            <ul>
+                <li>
+                    <form action="/MainHome" method="get">
+                        <button type="submit">돌아가기</button>
+                    </form>
+                    <form action="/login" method="post">
+                        <button type="submit">로그아웃</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
