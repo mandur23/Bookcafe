@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인하기</title>
+    <link type="text/css" rel="stylesheet" href="/css/login_page.css"> <!-- CSS 파일 링크 추가 -->
+</head>
+<body>
+    <div class="login-container">
+        <h1>로그인하기</h1>
+        <form action="/login" method="post">
+            <label for="Email">사용자 이메일:</label>
+            <input type="text" id="Email" name="memberEmail" placeholder="사용자 이메일을 입력하세요" required>
+            
+            <label for="password">비밀번호:</label>
+            <input type="password" id="password" name="memberPassword" placeholder="비밀번호를 입력하세요" required>
+            
+            <button type="submit">로그인</button>
+        </form>
+    </div>
+</body>
+</html>

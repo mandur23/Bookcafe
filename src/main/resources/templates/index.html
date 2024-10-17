@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>홈 페이지</title>
+    <style>
+        @import url(/css/home_page.css);
+    </style>
+</head>
+<body>
+    <div class="home-container">
+        <h1>환영합니다!</h1>
+        <p>로그인하거나 가입하여 서비스를 이용하세요.</p>
+        <div class="button-container">
+            <form action="/login" method="get">
+                <button type="submit" class="button">로그인</button>
+            </form>
+            <form action="/signup" method="get">
+                <button type="submit" class="button">회원가입</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

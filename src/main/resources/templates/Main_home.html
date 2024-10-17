@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookcafe</title>
+    <link type="text/css" rel="stylesheet" href="/css/main_home.css">
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <h1>Bookcafe</h1>
+        <nav>
+            <ul>
+                <li><a href="#">홈</a></li>
+                <li><a href="#">새 책</a></li>
+                <li><a href="#">채팅</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">내 소식</a></li>
+                <li><a href="#">session 값 확인: <p th:text="${session.loginName}"></p></a> </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="banner">Bookcafe에 오신 것을 환영합니다!</div>
+
+<main>
+    <section class="youtube-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jcSVUpa5RxY" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section class="popular-posts">
+        <h2>인기 책 리뷰</h2>
+        <ul>
+            <li><a href="#">베스트셀러 리뷰</a></li>
+            <li><a href="#">신간 도서 소개</a></li>
+            <li><a href="#">독서 모임 후기</a></li>
+            <li><a href="#">추천 도서 리스트</a></li>
+        </ul>
+    </section>
+
+    <section class="board-list">
+        <h2>게시판</h2>
+        <ul>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">독서 일상</a></li>
+            <li><a href="#">팬아트 갤러리</a></li>
+            <li><a href="#">책 관련 소식</a></li>
+            <li><a href="#">유머 게시판</a></li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Bookcafe</p>
+</footer>
+</body>
+</html>
