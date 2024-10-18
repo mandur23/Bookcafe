@@ -112,4 +112,8 @@ public class main_control {
         redirectAttributes.addFlashAttribute("success", message); // 성공 메시지를 리다이렉트 속성에 추가
         return "redirect:/"; // 홈 페이지로 리다이렉트
     }
+    @GetMapping("/boardupdate")
+    public String boardUpdate() {
+        return "BoardHome";
+    }
 }
