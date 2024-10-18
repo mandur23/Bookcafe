@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>가입하기</title>
-    <link type="text/css" rel="stylesheet" href="/css/sign_up_page.css">
+    <title>가입하기 - Stellive</title>
+    <link rel="stylesheet" href="/css/sign_up_page.css">
 </head>
 <body>
-    <div class="signup-container">
-        <h1>가입하기</h1>
-        <form action="/signup" method="post">
-            <label for="username">사용자 이름:</label>
-            <input type="text" id="username" name="memberName" placeholder="사용자 이름을 입력하세요" required>
+<main>
+    <section class="signup-form">
+        <h2>가입하기</h2>
+        <form action="/" method="post">
+            <label for="username">닉네임:</label>
+            <input type="text" id="username" name="memberName" required>
 
             <label for="email">이메일:</label>
-            <input type="email" id="email" name="memberEmail" placeholder="이메일을 입력하세요" required>
-            
+            <input type="email" id="email" name="memberEmail" required>
+
             <label for="password">비밀번호:</label>
-            <input type="password" id="password" name="memberPassword" placeholder="비밀번호를 입력하세요" required>
-            
+            <input type="password" id="password" name="memberPassword" required>
+
             <label for="confirm-password">비밀번호 확인:</label>
-            <input type="password" id="confirm-password" name="check_password" placeholder="비밀번호를 다시 입력하세요" required>
-            
-            <button type="submit">회원가입</button>
+            <input type="password" id="confirm-password" name="check_password" required>
+
+            <button type="submit">가입하기</button>
         </form>
-        <!-- 성공 또는 오류 메시지 표시 -->
-        <div>
-            <p th:if="${success}" th:text="${success}"></p>
-            <p th:if="${error}" th:text="${error}"></p>
-        </div>
-    </div>
+    </section>
+</main>
+<footer>
+    <p>© 2023 Stellive. All rights reserved.</p>
+</footer>
 </body>
 </html>

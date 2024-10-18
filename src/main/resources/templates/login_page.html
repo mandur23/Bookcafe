@@ -10,7 +10,7 @@
         <h1>로그인하기</h1>
         <form action="/login" method="post">
             <label for="Email">사용자 이메일:</label>
-            <input type="text" id="Email" name="memberEmail" placeholder="사용자 이메일을 입력하세요" required>
+            <input type="Email" id="Email" name="memberEmail" placeholder="사용자 이메일을 입력하세요" required>
             
             <label for="password">비밀번호:</label>
             <input type="password" id="password" name="memberPassword" placeholder="비밀번호를 입력하세요" required>
@@ -18,5 +18,13 @@
             <button type="submit">로그인</button>
         </form>
     </div>
+    <script>
+        const loginError = "${loginError}";
+        if (loginError) {
+            alert("이메일 또는 비밀번호가 다르거나 없습니다.");
+        }
+        else
+        alert("로그인 성공");
+    </script>
 </body>
 </html>

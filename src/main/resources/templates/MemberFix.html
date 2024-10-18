@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>내 정보 수정</title>
+    <link rel="stylesheet" href="/css/MemberFix.css">
+</head>
+<body>
+    <h1>내 정보 수정</h1>
+    <form action="/MemberFix" method="post">
+        <!-- 회원 정보 수정 폼 -->
+        <label for="memberName">이름:</label>
+        <input type="text" id="memberName" name="memberName" th:value="${member.memberName}" required>
+        
+        <label for="memberEmail">이메일:</label>
+        <input type="email" id="memberEmail" name="memberEmail" th:value="${member.memberEmail}" required readonly>
+        
+        <label for="memberPassword">비밀번호:</label>
+        <input type="password" id="memberPassword" name="memberPassword" placeholder="새 비밀번호 입력 (변경할 경우)" >
+        
+        <button type="submit">정보 수정</button>
+    </form>
+    <form action="/MainHome" method="get"><button type="submit">홈으로</button></form>
+
+    <!-- 탈퇴 버튼 추가 -->
+    <form action="/deleteMember" method="get" style="margin-top: 20px;">
+        <button type="button" onclick="confirmDelete()" style="background-color: red; color: white;">탈퇴</button>
+    </form>
+
+    <script>
+    function confirmDelete() {
+        if (confirm("정말로 탈퇴하시겠습니까?")) {
+            window.location.href = '/deleteMember'; // 사용자가 'yes'를 선택하면 탈퇴 요청
+        }
+    }
+    </script>
+</body>
+</html>

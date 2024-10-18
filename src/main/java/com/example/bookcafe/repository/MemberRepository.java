@@ -7,6 +7,6 @@ import com.example.bookcafe.entity.MemberEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 public interface MemberRepository extends JpaRepository<MemberEntity, Long> {
-    //닉네임 정보 조회
+    //이메일 정보 조회
     Optional<MemberEntity> findByMemberEmail(String memberEmail);
 }
