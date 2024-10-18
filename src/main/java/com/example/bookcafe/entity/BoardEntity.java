@@ -1,9 +1,6 @@
 package com.example.bookcafe.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,9 +12,12 @@ public class BoardEntity {
     @Id
     @GeneratedValue
     private int id;
+    @Column
     private String title;
+    @Column
     private String content;
-    private String user;
+    @Column
     private String author;
-
+    @Column
+    private String comment;
 }
